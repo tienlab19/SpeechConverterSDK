@@ -8,7 +8,7 @@
 import Speech
 
 class SpeechRecognizer {
-    private lazy var speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "vi-VI"))
+    private lazy var speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "vi-VN"))
     private var recognitionTask: SFSpeechRecognitionTask?
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private let audioEngine = AVAudioEngine()
