@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 74;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,13 +41,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FC5C4EFE2D07DE130056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = FC5C4EEA2D07DE120056B73A /* SpeechConverterSDKDemo */;
-		};
 		FC5C51732D07E93B0056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
@@ -55,11 +48,36 @@
 			);
 			target = FC5C4EB42D07DCAD0056B73A /* SpeechConverterSDK */;
 		};
+		FC5C51B02D0826B30056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				/Localized/LaunchScreen.storyboard,
+				/Localized/Main.storyboard,
+				AppDelegate.swift,
+				Assets.xcassets,
+				Info.plist,
+				SceneDelegate.swift,
+				ViewController.swift,
+			);
+			target = FC5C4EB42D07DCAD0056B73A /* SpeechConverterSDK */;
+		};
+		FC5C51B12D0826B30056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				/Localized/LaunchScreen.storyboard,
+				/Localized/Main.storyboard,
+				AppDelegate.swift,
+				Assets.xcassets,
+				SceneDelegate.swift,
+				ViewController.swift,
+			);
+			target = FC5C4EEA2D07DE120056B73A /* SpeechConverterSDKDemo */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FC5C4EB72D07DCAD0056B73A /* SpeechConverterSDK */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FC5C51732D07E93B0056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SpeechConverterSDK; sourceTree = "<group>"; };
-		FC5C4EEC2D07DE120056B73A /* SpeechConverterSDKDemo */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FC5C4EFE2D07DE130056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SpeechConverterSDKDemo; sourceTree = "<group>"; };
+		FC5C51A92D0826B30056B73A /* SpeechConverterSDKDemo */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (FC5C51B02D0826B30056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, FC5C51B12D0826B30056B73A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = SpeechConverterSDKDemo; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5C4EB72D07DCAD0056B73A /* SpeechConverterSDK */,
-				FC5C4EEC2D07DE120056B73A /* SpeechConverterSDKDemo */,
+				FC5C51A92D0826B30056B73A /* SpeechConverterSDKDemo */,
 				FC5C4F002D07DE1E0056B73A /* Frameworks */,
 				FC5C4EB62D07DCAD0056B73A /* Products */,
 			);
@@ -135,6 +153,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FC5C4EB72D07DCAD0056B73A /* SpeechConverterSDK */,
+				FC5C51A92D0826B30056B73A /* SpeechConverterSDKDemo */,
 			);
 			name = SpeechConverterSDK;
 			packageProductDependencies = (
@@ -156,9 +175,6 @@
 			);
 			dependencies = (
 				FC5C50D02D07E2F70056B73A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				FC5C4EEC2D07DE120056B73A /* SpeechConverterSDKDemo */,
 			);
 			name = SpeechConverterSDKDemo;
 			packageProductDependencies = (
@@ -186,7 +202,6 @@
 				};
 			};
 			buildConfigurationList = FC5C4EAF2D07DCAD0056B73A /* Build configuration list for PBXProject "SpeechConverterSDK" */;
-			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,6 +210,7 @@
 			);
 			mainGroup = FC5C4EAB2D07DCAD0056B73A;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 55;
 			productRefGroup = FC5C4EB62D07DCAD0056B73A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

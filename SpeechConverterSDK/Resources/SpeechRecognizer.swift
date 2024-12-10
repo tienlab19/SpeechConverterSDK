@@ -21,11 +21,13 @@ class SpeechRecognizer {
         // Ensure that speech recognizer is available
         guard let recognizer = speechRecognizer, recognizer.isAvailable else {
             print("[SDK DEUG] Ensure that speech recognizer is available")
+            completion(nil)
             return
         }
          
         recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         guard let recognitionRequest = recognitionRequest else {
+            completion(nil)
             fatalError("Unable to create a recognition request")
         }
         
@@ -61,6 +63,7 @@ class SpeechRecognizer {
             try audioEngine.start()
         } catch {
             print("[SDK DEUG] Audio engine couldn't start due to error: \(error.localizedDescription)")
+            completion(nil)
         }
     }
     
